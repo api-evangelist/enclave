@@ -1,8 +1,15 @@
 aid: enclave
 name: Enclave
-description: Enclave is a company surfaced as a portfolio company of 8vc, threshold-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Enclave (enclave.ai) is an AI-powered application and cloud security platform that operates as an
+  "agentic security engineer." It continuously builds a living model of an organization's attack surface
+  across services and cloud providers, then autonomously triages and investigates vulnerability findings
+  against known CVEs to determine real-world exploitability and reachability. Rather than flooding teams
+  with signature-based noise, Enclave traces data flows to confirm whether a CVE is actually reachable,
+  surfaces cross-service exploits that traditional scanners miss, and routes prioritized remediation plans
+  with proof to the owning teams. Founded by veterans from Stripe, Box, VMware, Salesforce, and Yelp, the
+  company is backed by 8VC and Marc Benioff. Added to the API Evangelist network and enriched from the
+  company's public web surface; no public developer API is currently published.
 url: https://raw.githubusercontent.com/api-evangelist/enclave/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +18,31 @@ x-backed-by:
 - threshold-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://enclave.ai/img/redesign/footer/logo-wordmark.svg
 tags:
 - Company
+- Security
+- Application Security
+- Cloud Security
+- Vulnerability Management
+- Artificial Intelligence
+- Agentic AI
+- CVE
+- DevSecOps
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/enclave-vulnerability-disclosure.yml
+- type: Security
+  url: https://enclave.ai/.well-known/security.txt
+- type: DomainSecurity
+  url: security/enclave-domain-security.yml
+- type: WellKnown
+  url: well-known/enclave-well-known.yml
+- type: SecurityTxt
+  url: well-known/enclave-security.txt
+- type: TrustCenter
+  url: https://trust.enclave.ai
+- type: Blog
+  url: https://enclave.ai/blog
+- type: Support
+  url: https://enclave.ai/contact
+- type: TermsOfService
+  url: https://enclave.ai/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://enclave.ai/legal/privacy-policy
 - type: Website
   url: https://enclave.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
